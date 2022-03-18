@@ -34,7 +34,7 @@ from PIL import Image
 #Set title
 
 st.title('Automatic Data Analysis')
-image = Image.open('lpu.png')
+image = Image.open('lpu.png').convert('RGB').save('new.jpeg')
 st.image(image,use_column_width=True)
 
 def create_download_link(val, filename):
